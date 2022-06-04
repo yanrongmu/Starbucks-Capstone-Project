@@ -42,7 +42,7 @@ There is a preject report to summarize the results of the analysis.
 
 ## Results<a name="results"></a>
 
-The main findings can be found in conclusion section in the notebook. This repo also includes a complete project report.
+The main findings can be found in conclusion section in the notebook. This repo also includes a complete project report "Starbucks_Capstone_Report.md".
 
 ### Licensing, Authors, Acknowledgements, etc.<a name="license"></a>
 
