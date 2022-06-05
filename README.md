@@ -42,7 +42,11 @@ There is a preject report to summarize the results of the analysis.
 
 ## Results<a name="results"></a>
 
-The main findings can be found in conclusion section in the notebook. This repo also includes a complete project report "Starbucks_Capstone_Report.md".
+The main findings can be found in conclusion section in the notebook. This repo also includes a complete project report "Starbucks_Capstone_Report.md". Below are the quick summaries:
+
+For question 1, based on the feature importance results for both BOGO and discount offer types, the top 3 main features are membership tenure, income, and age. The membership tenure is much more important than the other 2 features.
+
+For question 2, I used seperate models to predict if the customer will respond to an BOGO or discount offer, in another word, if the offer is effective on the customer. I used Random Forest Classifier model for both offer types, and got accuracy score 72.66% for BOGO and 76.01% for discount. Although I was expecting to see the score over 80%, the current accuracy would be acceptable to send offers from business aspect.
 
 ### Licensing, Authors, Acknowledgements, etc.<a name="license"></a>
 
