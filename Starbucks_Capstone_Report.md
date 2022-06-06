@@ -1,4 +1,6 @@
-# Udacity Data Scientist Nanodegree Capstone Project Report
+# What Offer Starbucks Should Send to You
+
+![cover](/images/cover.jpeg)
 
 ## Project Overview
 
@@ -6,12 +8,29 @@ Once every few days, Starbucks sends out an offer to users of the mobile app. An
 
 This project used the data set which contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. This data set is a simplified version of the real Starbucks app because the underlying simulator only has one product whereas Starbucks actually sells dozens of products.
 
-The goal is to combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type. Based on that, this project will focus on:
+The goal is to combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type. 
+
+## Problem Statement
+
+Based on the goal described in the overview section, this project will focus on:
 
 1. What are the main features that affect someone on responding the offers?
 
 2. Build model to predict whether or not someone will respond to an offer.
 
+To achieve the goal, my strategy are following steps:
+
+1. Combine the transaction, customer demographic and offer information datasets, by linking the offer id and customer id from portfolio and profile data onto the transcript data. Then each row represents a customer-offer pair.
+
+2. Create the target variable "offer_effective" for each customer-offer pair based on the existing information.
+
+3. Build the classification model to predict the target variable, evaluate the model performance, and refine the model if necessary.
+
+## Metrics
+
+To measure the model performance, I'll use the accuracy which is the most common metric for classification and it measures hhe fraction of samples predicted correctly (i.e. whether an offer is effective).
+
+However, if the target variable classes is unbalanced, i.e. uneven percentages of effective and ineffective offer, then considering recall and precision scores may provide some insights. Recall score will tell us the fraction of positives events that predicted correctly, while precision tells the fraction of predicted positives events that are actually positive. In that case, F-1 score may be easier to interpret, because F-1 is the harmonic mean of recall and precision, with a higher score as a better model.
 
 ## Data Dictionary
 
